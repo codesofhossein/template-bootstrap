@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Vaziri";
+    src: url("../../fonts/Vazir.eot");
+
+    src: url("../../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Vazir.woff2") format("woff2"),
+    url("../../fonts/Vazir.woff") format("woff"),
+    url("../../fonts/Vazir.ttf") format("truetype");
+}
+
+body {
+
+    font-family: "Vaziri" !important;
+    
+}
+
+
+
+.container {
+
+    transition: all 0.2s;
+    
+}
+
+.icon{
+
+    color: #0d6efd;
+    background-color: #ebeafb;
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-flex;
+}
+
+.my-a {
+
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.my-a:hover {
+
+    color: rgb(93, 93, 93);
+    transform: translateX(12px)!important;
+
+}
+
+.list-unstyled li {
+
+    transition: all 0.3s;
+}
+
+.list-unstyled li:hover {
+
+    transform: translateX(-10px);
+}
+
+.list-unstyled li:hover::before{
+
+    
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 18px;
+    vertical-align: middle;
+    background-image: url(../../caret-left-fill.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    margin-left: 5px;
+}
+
+
+.social {
+
+    transition: all 0.2s;
+}
+
+.social:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+/* for scrollbar */
+:root::-webkit-scrollbar {
+    width: 16px;
+    background-color: transparent;
+  }
+  
+  :root::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 15px;
+  }
+  
+  :root::-webkit-scrollbar-thumb:vertical {
+    min-height: 60px;
+  }
+  
+  :root::-webkit-scrollbar-thumb:horizontal {
+    min-width: 60px;
+  }
